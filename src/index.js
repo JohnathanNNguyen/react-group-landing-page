@@ -3,15 +3,19 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import ProductContainer from "./ProductContainer/ProductContainer";
 
-const App = () => {
-  return (
-    <ProductContainer
-      img="/images/recipe-book-ss.png"
-      title="Quinoa"
-      description="Yummmmmmmmy"
-    />
-  );
-};
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <ProductContainer
+          img="/images/recipe-book-ss.png"
+          title="Quinoa"
+          description="Yummmmmmmmy"
+        />
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(<App />, document.querySelector("#root"));
 
