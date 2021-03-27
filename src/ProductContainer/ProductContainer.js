@@ -5,7 +5,6 @@ class ProductContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = { itemsInCart: 0 };
-    this.addItem = this.addItem.bind(this);
   }
   addItem() {
     this.setState({ itemsInCart: this.state.itemsInCart + 1 });
